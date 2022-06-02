@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    int a[50],n,count,frist,last,s,i;
+    printf("Enter the limit:");
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+    
+          scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++){
+         count=log10(a[i]);
+         frist=a[i]/pow(10,count);
+         last=a[i]%10;
+         s=frist+last;
+         printf("%d\n",s);    
+    }        
+}
